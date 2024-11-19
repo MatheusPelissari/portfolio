@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio do Aluno Matheus Pelissari</title>
+    <link rel="stylesheet" href="portifolio.css">
+    <script src="portifolio.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Portfólio do Aluno Matheus Pelissari</h1>
+    </header>
+    <main>
+     
+     
+        <section>
+            <h2>Experiência Criativa</h2>
+            <div class="button-container">
+                <button class="button" onclick="showPopup()">Projeto 1 - Jogo Dalibor</button>
+                <button class="button" onclick="showPopup2()">Projeto 2 - Aplicativo Multimídia</button>
+                <button class="button" onclick="showPopup3()">Projeto 3 - Site Eduquiz</button>
+            </div>
+        </section>
+        <section>
+            <h2>Resolução de Problemas com Lógica Matemática</h2>
+            <div class="button-container">
+                <button class="button" onclick="showPopup4()">Jogo Detetive</button>
+            </div>
+        </section>
+        <section>
+            <h2>Raciocínio Algorítmico</h2>
+            <div class="button-container">
+                <button class="button" onclick="showPopup5()">Raciocínio Algorítmico - Máquina de Vendas</button>
+                <button class="button" onclick="showPopup6()">Raciocínio Algorítmico - Pedra, Papel e Tesoura</button>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Popups existentes -->
+    <div id="popup">
+        <img src="assets/Captura de tela 2024-11-18 215207.png" alt="Imagem do Jogo Dalibor">
+        <p>O jogo "As aventuras de Dalibor" é um jogo medieval que foi feito no Construct. Ele é feito em pixel art e é uma aventura emocionante.</p>
+        <button id="popup-close" onclick="hidePopup()">Fechar</button>
+    </div>
+
+    <div id="popup2">
+        <img src="assets/Captura de tela 2024-11-18 222310.png" alt="Imagem do Aplicativo Multimídia">
+        <p>O Aplicativo Multimídia foi feito no aplicativo Processing com o objetivo de ajudar no aprendizado de crianças. Ele explica sobre os principais elementos da tabela periódica e tem alguns questionários sobre o mesmo.</p>
+        <button id="popup2-close" onclick="hidePopup2()">Fechar</button>
+    </div>
+
+    <div id="popup3">
+        <img src="assets/Captura de tela 2024-11-18 223239.png" alt="Imagem do Site Eduquiz">
+        <p>Esse site foi feito com HTML, CSS e JavaScript. Ele possui diversos questionários sobre matemática, química, geografia e história. Foi feito para as crianças terem mais interesse em aprender.</p>
+        <button id="popup3-close" onclick="hidePopup3()">Fechar</button>
+    </div>
+
+    <div id="popup4">
+        <img src="assets/Detetive2.png" alt="Imagem do Jogo Detetive">
+        <p>O Jogo Detetive desafia os jogadores a resolver mistérios por meio de lógica e dedução. Foi desenvolvido para estimular o pensamento crítico e a criatividade.</p>
+        <button id="popup4-close" onclick="hidePopup4()">Fechar</button>
+    </div>
+
+    <!-- Novos popups -->
+    <div id="popup5">
+        <img src="assets/maqvenda.png" alt="Máquina de Vendas">
+        <p>Este projeto utiliza lógica algorítmica para simular uma máquina de vendas com cálculo de troco e seleção de itens.</p>
+        <button id="popup5-close" onclick="hidePopup5()">Fechar</button>
+    </div>
+
+    <div id="popup6">
+        <img src="assets/pedrapapeltesoura.png" alt="Pedra, Papel e Tesoura">
+        <p>Um jogo clássico recriado com lógica de programação para competir contra a máquina. Quem ganhará?</p>
+        <button id="popup6-close" onclick="hidePopup6()">Fechar</button>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay"></div>
+
+    <script>
+
+    </script>
+</body>
+</html>
